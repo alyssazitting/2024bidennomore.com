@@ -1,0 +1,214 @@
+{
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+
+}
+.banner {
+    position: relative;
+    background: #ff1166 url(/images/anti-biden-banner.jpg);
+    height: 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    white-space: nowrap;
+}
+.banner:before {
+    content: '\00a0';
+    display: inline-block;
+    height: 100%;
+    width: 0px;
+    vertical-align: middle;
+}
+.banner:after {
+    content: '\00a0';
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5)
+}
+hgroup {
+    position: relative;
+    display: inline-block;
+    max-width: 720px;
+    margin:0 auto;
+    vertical-align: middle;
+    white-space: normal;
+    z-index: 100;
+}
+hgroup > h1 {
+    color: #fff;
+    font: 1000 60px/70px;
+    text-transform: ;
+    text-shadow: 0px 2px 3px rgba(0,0,0,.25);
+}
+hgroup > h2 {
+    color: #fff;
+    font: 100 30px/36px;
+    text-transform: capitalize;
+    text-shadow: 0px 2px 3px rgba(0,0,0,.25);
+}
+hgroup > a {
+    display: inline-block;
+    background-color: navy;
+    border-radius: 24px;
+    margin: 12px 0 0 0;
+    padding: 9px 24px;
+    color: white;
+    font: 500 24px/36px arial;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+hgroup > a:hover {  
+    background: #f45456;
+}
+
+
+
+.product-grid {
+    
+}
+.product-grid > li {
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+    width: 25%;
+    padding: 12px;
+}
+.product-grid > li > .boxed {
+    background-color: lightgray;
+    border-radius: 25px;
+    text-align: center;
+    padding: 12px
+}
+.product-grid > li > .boxed > img {
+    max-width: auto;
+    max-height: 250px;
+    max-width: 100%;
+}
+.product-grid > li > .boxed > hgroup {
+    display:block; 
+}
+.product-grid > li > .boxed > hgroup > h3 {
+    text-align: center;
+    font: 150 40px/40px;
+}
+.product-grid > li > .boxed > hgroup > p {
+    text-align: center;
+    height: 50px;
+    font: 150 20px/30px;
+}
+.product-grid > li > .boxed > hgroup > h4 {
+    text-align: center;
+    font: 150 15px/10px monospace;
+}
+.product-grid > li > .boxed > hgroup > img {
+    width: 40px;
+}
+.product-grid > li > .boxed > hgroup > svg {
+    width: 60px;
+    height: 60px;
+    transform: translate(0px,40px)
+}
+.product-grid > li > .boxed > hgroup > svg:hover g path {
+    fill: red;
+}
+
+@media (max-width: 960px) {
+    
+.product-grid > li {
+    width: 50%
+}
+    
+}
+
+@media (max-width: 600px) {
+    
+.product-grid > li {
+    float: none;
+    width: 100%;
+}
+    
+}
+
+.product-details {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    text-align: center;  
+    background-color: #E5E2E7;
+}
+
+.product-details > section > hgroup > h1 {
+    color: black;
+    font: 900 50px/36px 'Neucha', cursive;
+    text-transform: capitalize;
+    text-shadow: 0px 2px 3px rgba(0,0,0,.25);
+    background-color: white;
+    border-radius: 24px;
+    padding: 9px 24px;
+}
+
+.product-details > section > .photo-gallery {
+    text-align: center;
+}
+
+.product-details > section > .photo-gallery > .primary-photo {
+    display: inline-block;
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-details > section > .photo-gallery > img {
+    max-width: auto;
+    max-height: 130px;
+    max-width: 100%;
+    
+}
+
+.product-details > section > hgroup > h2 {
+    color: black;
+    font: 900 30px/30px 'Neucha', cursive;
+    text-transform: capitalize;
+    text-shadow: 0px 2px 3px rgba(0,0,0,.25);
+    background-color: white;
+    border-radius: 24px;
+    padding: 9px 24px;
+}
+
+.product-details > section > p {
+    font: 150 20px/30px'Shadows Into Light';
+    text-align: left;
+    background-color: white;
+    border-radius: 24px;
+    padding: 9px 24px;
+}
+
+.product-details > section > form > label {
+    font: 150 15px/15px 'Neucha', cursive;
+}
+
+.product-details > section > form > a {
+    display: inline-block;
+    background-color: black;
+    border-radius: 24px;
+    margin: 12px 0 0 0;
+    padding: 9px 24px;
+    color: white;
+    font: 500 24px/36px arial;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.product-details > section > form > a:hover {
+    background: white;
+    color: black;
+}

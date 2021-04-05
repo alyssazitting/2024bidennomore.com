@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    
+    <div class="product-details">
+        <section>
+            <hgroup>
+                <h1>Ellie Elephant Plushie</h1>
+            </hgroup>
+            <div class="photo-gallery">
+                <div class="primary-photo" style="background-image: url(/images/elephant-plushie.png)">
+                </div>
+                <img src="/images/elephant-plushie.png">
+                <img src="/images/elephant-plushie-two.png">
+                <img src="/images/elephant-plushie-three.png">
+                <img src="/images/elephant-plushie-four.png">
+            </div>
+
+        </section>
+        <section>
+            <hgroup>
+                <h2>$15.00</h2>
+            </hgroup>
+            <p>ECF Ellie Elephant stuffed animal toy makes great gift for your children or loved ones and helps our elephants in need. Proceeds go to the Elephant Crisis Fund.  Warm Note: 1. Machine washing is not recommended. If necessary, place plushie in a laundry bag and choose a light mode. 2.Hand washing is recommended.
+            </p>
+            <form>
+                <label>
+                    <input type="radio" name="size" value="small">
+                    Small
+                </label>
+                <label>
+                    <input type="radio" name="size" value="medium">
+                    Medium
+                </label>
+                <label>
+                    <input type="radio" name="size" value="large">
+                    Large
+                </label>
+                <a class="snipcart-add-item"
+  data-item-id="starry-night"
+  data-item-price="79.99"
+  data-item-url="/paintings/starry-night"
+  data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+  data-item-custom1-name="Size"
+data-item-custom1-options="Small|Medium|Large"
+data-item-image="/assets/images/starry-night.jpg"
+  data-item-name="The Starry Night">
+  Add to cart
+                    
+                    
+                </a>
+            </form>
+            
+        </section>
+    </div>
+    <script type="text/javascript">
+$( ".photo-gallery > img" ).click(function() {
+var imgSrc= $(this).attr("src");
+$('.primary-photo').attr('style',"background-image: url("+imgSrc+");");
+});
+    $( ".product-details form input" ).change(function() {
+var productSize= $(this).val();
+$('.snipcart-add-item').attr('data-item-custom1-value',productSize);
+});
+</script>
+</body>
+</html>
+
